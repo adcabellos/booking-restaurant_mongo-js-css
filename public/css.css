@@ -1,0 +1,772 @@
+/* GENERIC */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+    font-family: "Roboto";
+}
+
+body {
+    background-color: #d0b07b;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+body {
+    min-height: 100vh;
+}
+
+
+
+
+/* HEADER */
+
+#main-header {
+    height: 7rem;
+    top: 0;
+    background-color:#24221a;
+    width: 100%;
+    z-index: 1;
+
+}
+
+#main-header .logo {
+    width: 15%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.2em;
+    padding: 0 1em;
+  }
+
+#main-header .desktop-wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 7rem;
+    align-items: center;
+    border-bottom:2px groove;
+    /* border-color: blanchedalmond; */
+
+}
+
+#main-header .menu{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+
+}
+
+#main-header .menu a{
+
+    padding: 1rem;
+    text-decoration: none;
+    color: rgb(255, 236, 236);
+    
+}
+
+#main-header .menu a.actual-page {
+    color:#a3140c;
+    text-decoration: underline;
+    text-decoration-color:#a3140c;
+
+}
+
+#main-header .lupa {
+    width: 1.5%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 1em;
+    
+  }
+
+#favoritos {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color:#a3140c;
+    margin-left: 2rem;
+    color:white;
+}
+
+#favoritos:hover {
+    border: 2px solid #143a2a;
+}
+
+.data-div-favorites:hover  {
+    background-color:transparent;
+}
+ 
+
+/* MAIN */
+
+#main-body {
+    background-image: url("foto-portada.jpg");
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    min-height: 100vh;
+    position: relative;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-bg-div {
+    background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+.text-bg-div h1 {
+    font-size: 300%;
+    margin-bottom: 2rem;
+}
+
+.text-bg-div p {
+    font-size: 200%;
+}
+#main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#content {
+    height: auto;    
+}
+
+#breadcrumb-container {
+    background-color: rgb(197, 194, 194);
+
+}
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    margin-left: 5rem;
+
+  }
+
+ul.breadcrumb li {
+    padding: 1rem;
+
+}
+
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
+/* SEARCH PAGE: SECCION BUSQUEDAS */
+
+#search-section {
+    background-image: url("imagenes/wikirock-buscador-artistas.jpg");
+    /* min-height: 100vh; */
+    /* position: relative; */
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#formulario {
+    width: 100%;
+    min-height: 70vh;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#formulario label {
+    color: white;
+    font-size: 40px;
+    text-shadow: 2px 2px #464545;
+}
+
+#formulario #nombre {
+    width: 30rem;
+    height: 3rem;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.submit-button {
+    width: 7rem;
+    height: 4rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    font-family: "New Rocker";
+    font-weight: bolder;
+    font-size: larger;
+    box-shadow: 0px 10px 14px -7px #ffffff;
+    cursor: pointer;
+}
+
+.submit-button:hover  {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#search-results.format-results{
+    background-color: rgba(27, 27, 27, 0.8);
+    border-radius: 1rem;
+    color: rgb(255, 255, 255);
+    /* min-height: 100vh; */
+    width: 60%;
+    margin: 3rem;
+    padding: 1rem;
+    justify-content: space-around;
+    border:rgb(255, 255, 255) 1px groove;
+    
+}
+
+.artistbanner-format {
+    width:initial;
+    height: initial;
+    margin: 2rem 0;
+    border-radius: 0.5rem;
+    align-self: center;
+
+} 
+
+.main-content-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.artistname-format {
+    text-align: left;  
+    font-family: "Noto Sans JP";
+    color:white;
+}
+
+.artistbio-format {
+    text-align: justify;
+    font-family: "Noto Sans JP";
+    line-height: 1.5rem;
+}
+
+.data-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.artistthumb-format {
+    width:40%;
+    height: auto;
+    border: 1px solid rgb(99, 96, 96);
+    padding: 0.3rem;
+
+}
+
+.data-div-artist-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-bottom: 2rem;
+}
+
+.logo-bolt-icon {
+    width: auto;
+    height: 2rem;
+    margin-right: 1rem;
+}
+
+.data-div-country {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-bottom: 2rem;
+}
+
+.data-div-biography {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3rem;
+    line-height: 1.4rem;
+    text-align: justify;
+
+}
+
+.data-div-website {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-bottom: 2rem;
+}
+
+.data-div-favorites {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    cursor: pointer;
+    padding: 1rem;
+    border: 1px white solid;
+    background-color: #a70505;
+    width: 70%;
+}
+
+.logo-heart-icon {
+
+width: auto;
+height: 1.5rem;
+margin-right: 0.5rem;
+}
+
+.logo-heart-icon-search {
+
+    width: auto;
+    height: 1.5rem;
+    margin-right: 1rem;
+}
+
+.logo-bolt-icon-show {
+    width: auto;
+    height: 2rem;
+    margin-right: 1rem;
+}
+
+
+
+.data-div-favorites:hover  {
+    background-color:transparent;
+}
+
+/* PÁGINA NOSOTROS */
+
+#about-us {
+    background-image: url("imagenes/wikirock-about-us.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 60vh;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.title-about {
+    font-family:"New Rocker";
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.subtitle-about {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.text-about {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: larger;
+
+}
+
+.button-search-yellow {
+    color: black;
+    text-decoration: none;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-family: "New Rocker";
+    font-weight: bolder;
+    font-size: 2.5rem;
+    box-shadow: 0px 10px 14px -7px #ffffff;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    }
+
+.button-search-yellow:hover {
+    color:rgb(255, 255, 255);
+    background-color: rgb(228, 179, 20);
+
+}
+
+
+/* FAVORITOS PAGINA */
+
+#search-section-favorites {
+    background-image: url("imagenes/wikirock-buscador.jpg");
+    min-height: 100vh;
+    text-align: center;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.artistname-favorites-format {
+    text-align: left;  
+    font-family: "New Rocker";
+    color:white;
+    font-size: 5rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.artistname-format-none {
+    color:white;
+    font-size: 2rem;
+    text-shadow: 1px white;
+    margin: 2rem;
+    margin-bottom: 5rem;
+}
+
+.button-search-none {
+    color: black;
+    text-decoration: none;
+    padding: 1rem;
+    font-family: "New Rocker";
+    font-weight: bolder;
+    font-size: 2.5rem;
+    box-shadow: 0px 10px 14px -7px #ffffff;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+}
+
+.button-search-none:hover {
+    color:rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+
+}
+
+
+.artistname-favorites-format:hover {
+    color:rgb(228, 179, 20);
+}
+
+.favoritos-container-results {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    margin: 2rem;
+    align-items: center;
+
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#24221a;
+    min-height: 15rem;
+    border-top: 1px dotted white;
+}
+
+.footer-last {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-first {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white; 
+    font-family: "Roboto";
+    font-size: smaller;
+    margin: 2rem;
+    max-width: 70%;
+
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-logo {
+    width: 10rem;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.2em;
+    padding: 0 1em;
+}
+
+.footer-logo-container {
+    display: flex;
+    width: 33%; 
+    height: 10rem;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0rem 2rem 0rem 2rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+    text-align: justify;
+
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 33%;
+    height: 10rem;
+    border-right:1px groove white;
+    border-left:1px groove white;
+    align-items: center;
+
+}
+
+.footer-info {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 10rem;
+    margin: 0rem 2rem 0rem 2rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+    margin-left: 6rem;
+    text-align: justify;
+
+
+}
+
+.first-footer-font {
+    color: white; 
+    font-family: "Noto Sans JP";
+}
+
+.footer-font {
+    color: white; 
+    font-family: "Noto Sans JP";
+    font-style: italic;
+}
+
+@media screen and (min-width: 767px) {
+
+.logo-heart-icon {
+    display:none;
+}
+
+}
+
+/*  PARA MOVIL */
+
+@media screen and (max-width: 767px) {
+
+    .logo-heart-icon{
+        margin-bottom: 1rem;
+    }
+    .logo-bolt-icon {
+        display: none; 
+    }
+
+    #main-header {
+        height: 14rem;
+        border-bottom: 1px solid white;
+
+    }
+   
+    #main-header .desktop-wrapper {
+        border-bottom: none;
+        height: 12rem;
+    }
+
+    #main-header .menu{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+        align-items: center;
+    }
+    
+    #main-header .menu li{
+        margin-bottom: 1rem;
+        font-size:x-large;
+    }
+
+    #main-header .menu a.actual-page {
+        color:rgb(7, 169, 245);
+        text-decoration: none;
+    }
+
+
+    #favoritos {
+        background: none;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    .favoritos-container-results {
+        align-items: inherit;
+    }
+
+    #main-header .menu #favoritos li a {
+        text-decoration: underline;
+        text-decoration-color: #a70505;
+
+    }
+
+
+    #main-header .logo {
+        display: none;
+    }
+
+    #main-header .lupa {
+        display:none; 
+    }
+
+    
+    .text-bg-div {
+        top: 70%;
+        font-size: smaller;
+    }
+
+    #main-body {
+        max-height: 70vh;
+    }
+
+    .footer-first {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .footer-last {
+       margin: 2rem;
+       text-align: center; 
+    }
+
+    .footer-logo-container, .contact-info, .footer-info{
+        width: fit-content;
+        border-right: none;
+    }
+
+    .footer-info {
+        margin: auto;
+    }
+
+    ul.breadcrumb {
+        display: none;
+    }
+
+    #about-us {
+        text-align: center;
+    }
+
+    .title-about {
+        font-size: 2rem;
+        padding: 1rem;
+        margin-bottom: 0;
+    }
+
+    .subtitle-about {
+        font-size: 1.5rem;
+        padding: 1rem;
+        margin-bottom: 0;
+    }
+
+    .text-about {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    .button-search-yellow {
+        font-size: inherit;
+        background-color:  rgb(228, 179, 20);
+    }
+
+    #formulario label {
+        font-size: 2rem;
+    }
+
+    #formulario #nombre {
+        width: 17rem;
+    }
+
+    .artistname-favorites-format {
+        font-size: 2.5rem;
+        color:white;
+        text-align: left;
+    }
+    
+
+    #search-results.format-results {
+        width: 90%;
+        margin: 0.5rem;   
+    }
+
+    .artistbanner-format {
+        margin:0;
+        margin-bottom: 2rem;
+    }
+    
+    .main-content-div {
+        flex-direction: column;
+    }
+
+    .artistthumb-format {
+        width: 90%;
+        border:none;
+        margin-bottom: 2rem;
+    }
+
+    .data-div {
+        width: 90%;
+    }
+
+    .data-div-favorites {
+        justify-content: center;
+    }
+
+    .data-div-biography {
+        display: none;
+    }
+
+
+}

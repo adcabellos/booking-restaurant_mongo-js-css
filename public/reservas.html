@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Perk</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css.css">
+
+
+</head>
+
+<body>
+
+    <header id="main-header">
+        <div class="desktop-wrapper">
+            <a href="index.html" class="logo"><img src="/assets/images/logo.png" alt="logo"></a>
+
+            <nav>
+                <ul class="menu">
+                    <li><a class="actual-page" id="inicio" href="index.html">INICIO</a></li>
+                    <li><a id="altas" href="clientes.html">ALTAS</a></li>
+                    <li><a id="reservas" href="reservas.html">RESERVAS</a></li>
+                    <div id="favoritos">
+                        <img src="imagenes/heart-icon.png" class="logo-heart-icon">
+                        <li><a href="admin.html"> Gunter Zone</a></li>
+                    </div>
+
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <section id="seccion-reservas-clientes">
+        <h2 class="friends-font"> RESERVAS EN CENTRAL PERK</h2>
+
+
+        <div class="clientes-login">
+
+            <label class="bold" for="email">Email</label>
+            <input type="text" id="email-login">
+
+            <label class="bold" for="password">Contraseña </label>
+            <input type="password" id="password-login">
+
+
+            <button class="bold" id="button-login" type="submit">Acceder</button>
+            <div id="mensaje-error"> </div>
+            <div id="mensaje-alta"> </div>
+
+        </div>
+        
+
+
+        <div class="clientes-reserva">
+
+            <label for="select-interior-exterior"> Selecciona el tipo de mesa</label>
+            <select name="Mesa interior/exterior" id="select-interior-exterior">
+                <option value="interior">Interior</option>
+                <option value="exterior">Exterior</option>
+            </select>
+
+            <label for="numero-comensales">Número de comensales</label>
+            <input type="number" min="1" max="6" name="numero-comensales" id="numero-comensales">
+
+            <label for="seleccion">Opción Vegana</label>
+            <input type="checkbox" name="seleccion" id="vegano">
+
+            <label for="intolerancia"> ¿Tienes alguna alergia o intolerancia? Avísanos</label>
+            <textarea name="intolerancia" id="intolerancia" cols="30" rows="5"></textarea>
+
+
+            <button class="bold" id="button-reserva" type="submit">Reservar</button>
+            <div id="mensaje-error-reserva"> </div>
+
+        </div>
+        <div id="mensaje-reserva" class="mostrar-reserva"> </div>
+
+
+    </section>
+
+
+    <footer>
+
+        <div class="footer-first">
+            <div class="footer-logo-container">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis voluptatum natus, labore nemo
+                    omnis Lorem ipsum dolor sit. </p>
+            </div>
+            <div class="contact-info">
+                <p>Alicia Delgado Cabellos </p>
+                <p>BBK BOOTCAMP 2021</p>
+                <p> Paseo Uribitarte, Bilbao</p>
+                <a class="link" href="mailto:adcabellos@gmail.com">alicia@bbkbootcamp</a>
+            </div>
+            <div class="footer-info">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis voluptatum natus, labore nemo
+                    omnis Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ipsa facere eaque doloremque enim
+                    odio. . </p>
+            </div>
+
+        </div>
+
+        <div class="footer-last">
+            <p class="friends-font">Central Perk Cafe © </p>
+        </div>
+
+    </footer>
+
+</body>
+<script src="js/scriptreservas.js"></script>
+
+</html>

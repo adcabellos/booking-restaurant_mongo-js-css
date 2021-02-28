@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Perk</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css.css">
+
+</head>
+
+<body>
+
+    <header id="main-header">
+        <div class="desktop-wrapper">
+            <a href="index.html" class="logo"><img src="/assets/images/logo.png" alt="logo"></a>
+
+            <nav>
+                <ul class="menu">
+                    <li><a class="actual-page" id="inicio" href="index.html">INICIO</a></li>
+                    <li><a id="altas" href="clientes.html">ALTAS</a></li>
+                    <li><a id="reservas" href="reservas.html">RESERVAS</a></li>
+                    <div id="favoritos">
+                        <img src="imagenes/heart-icon.png" class="logo-heart-icon">
+                        <li><a href="admin.html"> Gunter Zone</a></li>
+                    </div>
+
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <section id="section-principal">
+
+        <div id="div-principal"> </div>
+
+
+        <div id="finalizar-cliente">
+            <h2>Finalizar reservas</h2>
+            <button class="home-button" id="button-finalizar"> Finalizar</button>
+        </div>
+
+        <div id="datos-finalizar">
+
+            <label class="bold" for="email">Introduce el email</label>
+            <input type="text" id="email">
+            <button class="home-button" class="bold" id="button-actualizar" type="submit">Finalizar reserva</button>
+            <div id="error-finalizar"> </div>
+        </div>
+    </section>
+
+</body>
+
+<footer>
+
+    <div class="footer-first">
+        <div class="footer-logo-container">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis voluptatum natus, labore nemo
+                omnis Lorem ipsum dolor sit. </p>
+        </div>
+        <div class="contact-info">
+            <p>Alicia Delgado Cabellos </p>
+            <p>BBK BOOTCAMP 2021</p>
+            <p> Paseo Uribitarte, Bilbao</p>
+            <a class="link" href="mailto:adcabellos@gmail.com">alicia@bbkbootcamp</a>
+        </div>
+        <div class="footer-info">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis voluptatum natus, labore nemo
+                omnis Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ipsa facere eaque doloremque enim
+                odio. . </p>
+        </div>
+
+    </div>
+
+    <div class="footer-last">
+        <p class="friends-font">Central Perk Cafe © </p>
+    </div>
+
+</footer>
+
+<script src="js/scriptadmin.js"></script>
+
+
+</html>
